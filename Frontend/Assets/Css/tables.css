@@ -1,0 +1,55 @@
+.table {
+  border-left: 0.1px solid #808080;
+  border-bottom: 0.1px solid #808080;
+  border-spacing: 0;
+  width: 1278px; }
+
+.noborder {
+  border: none; }
+
+.bbdesign {
+  box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+  border-radius: 2px 2px 2px 2px; }
+
+.noborder tbody td, .noborder tbody th,
+.noborder thead td, .noborder thead th,
+.noborder tfoot td, .noborder tfoot th {
+  border: none; }
+
+.table td, .table th {
+  height: 38px;
+  border-right: 0.1px solid #808080;
+  border-top: 0.1px solid #808080;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.table thead td, .table thead th {
+  height: 26px;
+  text-align: center; }
+
+.table thead, .table tfoot {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.table tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.05); }
+
+.table tbody .tnum, .table tfoot .tnum {
+  text-align: right; }
+
+.table .tsmallvalue {
+  width: 5%; }
+
+.table .tmiddlevalue, .table .ttinytext {
+  width: 10%; }
+
+.table .tsmalltext {
+  width: 20%; }
+
+.table .thorde td, .table .thorde th, .table .tabf2 td, .table tabf2 th {
+  background-color: #372727; }
+
+.table .talliance td, .table .talliance th, .table .tabf1 td, .table tabf1 th {
+  background-color: #272f37; }

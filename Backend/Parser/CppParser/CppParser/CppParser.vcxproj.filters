@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Parser">
+      <UniqueIdentifier>{c362e655-d933-4385-a1df-241000284e1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Analyzer">
+      <UniqueIdentifier>{dc64f816-ca22-4d00-8d47-f994068cdef5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Database">
+      <UniqueIdentifier>{aee7c98f-0092-4635-be43-61a7713330af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RPLLHandler">
+      <UniqueIdentifier>{b1bfd533-a2c7-4728-9e6a-ebf5603f64c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MySQLConnector.cpp">
+      <Filter>Source Files\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Analyzer.cpp">
+      <Filter>Source Files\Analyzer</Filter>
+    </ClCompile>
+    <ClCompile Include="Armory.cpp">
+      <Filter>Source Files\Analyzer</Filter>
+    </ClCompile>
+    <ClCompile Include="RPLLParser.cpp">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="RPLLHandler.cpp">
+      <Filter>Source Files\RPLLHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalyzerPost.cpp">
+      <Filter>Source Files\Analyzer</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalyzerUtility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmoryProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Threat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StringUtility.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileUtility.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_OTL.h">
+      <Filter>Source Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQLConnector.h">
+      <Filter>Source Files\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="CombatLogParser.h">
+      <Filter>Source Files\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="Analyzer.h">
+      <Filter>Source Files\Analyzer</Filter>
+    </ClInclude>
+    <ClInclude Include="Armory.h">
+      <Filter>Source Files\Analyzer</Filter>
+    </ClInclude>
+    <ClInclude Include="RPLLParser.h">
+      <Filter>Source Files\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="ParsingStructs.h">
+      <Filter>Source Files\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmoryCharData.h">
+      <Filter>Source Files\Analyzer</Filter>
+    </ClInclude>
+    <ClInclude Include="RPLLHandler.h">
+      <Filter>Source Files\RPLLHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalyzerPost.h">
+      <Filter>Source Files\Analyzer</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalyzerUtility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseAccess.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CBTPStructs.h">
+      <Filter>Source Files\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="xxhash.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmoryProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="concurrentqueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmoryStructs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Threat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,48 @@
+.table{
+    float: left;
+    width: 637px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.table thead td{
+    text-align: left;
+    font-size: 18px;
+}
+
+#guild tbody td{
+    width: 40%;
+}
+
+#guild tbody td:last-child, #player tbody td:last-child{
+    width: 24%;
+    text-align: right;
+}
+
+#player tbody td{
+    width: 29%;
+}
+
+#player tbody td:nth-child(3){
+    width: 24%;
+}
+
+.sp {
+    margin-top: 5px;
+}
+
+.sp div{
+    line-height: 30px;
+}
+
+#guild tbody td:first-child {
+    width: 25%;
+}
+
+#player tbody td:first-child, #player tbody td:nth-child(2) {
+    width: 25%;
+}
+
+#player tbody td:nth-child(3) {
+    width: 15%;
+}

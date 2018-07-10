@@ -1,0 +1,335 @@
+#playerframe{
+    position: relative;
+    width: 555px;
+    height: 665px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.model{
+    background-size: 365px 500px;
+    position: absolute;
+    width: 365px;
+    height: 500px;
+    z-index: 1;
+    margin-top: 80px;
+    margin-left: 67px;
+}
+
+#left-container{
+    width: 500px;
+    height: 1020px;
+    float: left;
+    padding: 10px 10px 0 10px;
+}
+
+#middle-container{
+    width: 300px;
+    min-height: 300px;
+    float: left;
+    margin-left: 5px;
+    padding: 10px 10px 5px 10px;
+}
+
+#right-container{
+    width: 410px;
+    min-height: 100px;
+    float: left;
+    margin-left: 5px;
+    padding: 10px 10px 5px 10px;
+}
+
+#items-left, #items-right{
+    width: 56px;
+    height: 500px;
+    float: left;
+}
+
+#items-right{
+    margin-left: 386px;
+}
+
+#items-bottom{
+    position: absolute;
+    margin-top: 505px;
+    margin-left: 150px;
+}
+
+#resistances{
+    position: absolute;
+    width: 32px;
+    height: 150px;
+    margin-left: 400px;
+    margin-top: 88px;
+}
+
+#resistances div{
+    height: 29px;
+    width: 32px;
+    text-align: center;
+    line-height: 40px;
+    color: lime;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#names-top{
+    background-repeat: no-repeat;
+    width: 363px;
+    height: 80px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#modeloptions{
+    position: absolute;
+    margin-top: 510px;
+    pointer-events:all;
+}
+
+#itemsets, select{
+    position: absolute;
+    height: 35px;
+    width: 140px;
+    margin-top: 515px;
+    margin-left: -140px;
+    pointer-events:all;
+}
+
+#items-bottom .item-template-64 {
+    float: left;
+    margin-left: 7px;
+}
+
+.item-template-64, .item-template-64:hover {
+    height: 48px;
+    width: 51px;
+    text-align: right;
+    padding-top: 8px;
+    margin-bottom: 6px;
+    pointer-events: all;
+}
+
+.item-template-32, .item-template-32:hover {
+    padding-top: 6px;
+    height: 26px;
+    text-align: right;
+}
+
+.item-template-64 div, item-template-32 div, .item-template-32:hover div, .item-template-64:hover div{
+    height: 100%;
+    margin-top: -8px;
+}
+
+.sp{
+    display: inline-block;
+}
+
+.sp div{
+    position: absolute;
+    margin-left: 37px;
+    line-height: 32px;
+}
+
+.icon-32{
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    display: inline-block;
+}
+
+.pvprankimage {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.powerbar{
+    position:absolute;
+    width: 172px;
+    height: 30px;
+    background: blue;
+    line-height: 32px;
+    border-radius: 4px 4px 4px 4px;
+    margin-top: 463px;
+    margin-left: 67px;
+    background-color: #20c10f;
+    background-image: linear-gradient(to bottom, #167e0b, #20c10f);
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+#rage, #mana, #energy, #focus{
+    margin-left: 252px;
+}
+
+#energy{
+	background-color: #b1c415;
+	background-image: linear-gradient(to bottom, #727e0b, #b1c415);
+}
+
+#rage{
+	background-color: #b1c415;
+	background-image: linear-gradient(to bottom, #d40216, #b50213);
+}
+
+#mana{
+	background-color: #b1c415;
+	background-image: linear-gradient(to bottom, #0070de, #025bb5);
+}
+
+#stats{
+    margin-left: -5px;
+}
+
+#stats thead td{
+    text-align: left;
+    font-size: 16px;
+}
+
+#stats table{
+    width: 247px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+#stats table tbody td{
+    height: 25px;
+}
+#stats table tbody td:last-child{
+    width: 50%;
+    text-align: right;
+}
+
+.arrowleft, .arrowright, .arrowdown {
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    opacity: .85;
+}
+.arrowright:hover, .arrowdown:hover, .arrowleft:hover {
+    opacity: 1;
+}
+
+#achievements {
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 48px 48px;
+    height: 48px;
+    width: 100px;
+    position: absolute;
+    margin-left: 345px;
+    padding-right: 53px;
+}
+
+#achievements div{
+    position: absolute;
+    line-height: 42px;
+    font-size: 20px;
+    text-align: right;
+    width: 100px;
+}
+
+#chardesigner{
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    margin-top: 45px;
+    margin-left: 455px;
+    pointer-events:all;
+}
+
+
+#middle-container table{
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+#middle-container table tbody td{
+    width: 50%;
+}
+
+#middle-container table thead td{
+    text-align: left;
+    font-size: 16px;
+}
+
+#middle-container .bigger tbody td{
+    height: 45px;
+}
+
+#itemhistory tfoot td, #latestraids tfoot td{
+    text-align: center;
+}
+
+#itemhistory tbody td:first-child .item-template-32{
+    float: left;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+#itemhistory tbody td:first-child{
+    width: 74%;
+}
+
+#itemhistory tbody td:last-child{
+    width: 26%;
+    text-align: right;
+}
+
+#latestraids tbody td:first-child{
+    width: 45% !important;
+}
+#latestraids tbody td:last-child {
+    width: 55%;
+    text-align: right;
+}
+
+#guildhistory, #itemhistory{
+    font-size: 13px;
+}
+
+
+
+#right-container table{
+    width: 410px;
+    margin-bottom: 5px;
+}
+
+#right-container table thead tr:first-child td{
+    font-size: 16px;
+    text-align: left;
+}
+
+#right-container table tbody td{
+    width: 12%;
+    height: 30px;
+    text-align: right;
+}
+#right-container table tbody td:last-child{
+    width: 40%;
+    text-align: left;
+}
+
+#right-container table thead td{
+    width: 12%;
+}
+
+#right-container table thead td:last-child{
+    width: 40%;
+}
+
+#right-container table tbody{
+    display: none;
+}
+
+#guildhistory td:first-child{
+    width: 62%;
+}
+
+#guildhistory tbody td{
+    line-height: 15px;
+}

@@ -1,0 +1,63 @@
+.color-warrior, .color-, .color-c0 {
+  color: #c79c6e !important; }
+
+.color-rogue, .color-c1 {
+  color: #fff569 !important; }
+
+.color-priest, .color-c2 {
+  color: white !important; }
+
+.color-hunter, .color-c3 {
+  color: #abd473 !important; }
+
+.color-druid, .color-c4 {
+  color: #ff7d00 !important; }
+
+.color-mage, .color-c5 {
+  color: #69ccf0 !important; }
+
+.color-warlock, .color-c6 {
+  color: #9482c9 !important; }
+
+.color-paladin, .color-c7 {
+  color: #f58cba !important; }
+
+.color-shaman, .color-c8 {
+  color: #0070de !important; }
+
+.color-pet, .color-c99 {
+  color: #00FF00 !important; }
+
+.bgcolor- {
+  background-color: #f1a165 !important;
+  background-image: linear-gradient(to bottom, #f1a165, #f36d0a); }
+
+.bgcolor-warrior, .bgcolor-c0 {
+  background-color: #956a3c !important; }
+
+.bgcolor-rogue, .bgcolor-c1 {
+  background-color: #cdc337 !important; }
+
+.bgcolor-priest, .bgcolor-c2 {
+  background-color: #cdcdcd !important; }
+
+.bgcolor-hunter, .bgcolor-c3 {
+  background-color: #79a241 !important; }
+
+.bgcolor-druid, .bgcolor-c4 {
+  background-color: #cd4b00 !important; }
+
+.bgcolor-mage, .bgcolor-c5 {
+  background-color: #379abe !important; }
+
+.bgcolor-warlock, .bgcolor-c6 {
+  background-color: #625097 !important; }
+
+.bgcolor-paladin, .bgcolor-c7 {
+  background-color: #c35a88 !important; }
+
+.bgcolor-shaman, .bgcolor-c8 {
+  background-color: #003eac !important; }
+
+.bgcolor-pet, .bgcolor-c99 {
+  background-color: #00FF00 !important; }

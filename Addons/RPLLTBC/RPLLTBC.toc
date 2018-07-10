@@ -1,0 +1,13 @@
+## Interface: 20400
+## Title: RPLLCollector |cFFFF8080-Shino-|r
+## Notes: Collects additional data for Legacy-Logs/Realmplayers/Legacyplayers, that can't be read from the combat log for the Raidoverview and Armory.
+## Author: Shino <Synced> - Kronos
+## SavedVariables: RPLLPlayerData, RPLLSession
+## Dependencies: CombatLogFix
+RPLLCollector.xml
+init.lua
+core.lua
+overhealing.lua
+unitdata.lua
+attempts.lua
+bgstats.lua

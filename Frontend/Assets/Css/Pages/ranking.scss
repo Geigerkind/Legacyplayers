@@ -1,0 +1,73 @@
+#ra-navbar{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+#ra-navbar select{
+    width: 252.5px;
+    height: 30px;
+}
+
+#ra-navbar input{
+    width: 143px;
+}
+
+.table tbody td {
+    height: 18px;
+    padding-bottom: 0 !important;
+    line-height: 0 !important;
+}
+
+.table tbody td:first-child{
+    width: 5%;
+    text-align: right;
+}
+
+.table tbody td:last-child{
+    width: 13%;
+    text-align: right;
+}
+
+.table thead td:nth-child(2){
+    text-align: left;
+}
+
+.tstatusbar {
+    color: black;
+    white-space: nowrap;
+    display: inline-block;
+    height: 20px !important;
+    line-height: 20px !important;
+    margin-bottom: 0;
+}
+
+.tstatusbar div:first-child {
+    background-color: rgba(255, 255, 255, 0.15);
+    display: table-cell;
+    width: 100%;
+    white-space: nowrap;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 20px;
+}
+
+.tstatusbar div:last-child {
+    background-color: rgba(255, 255, 255, 0.15);
+    display: table-cell;
+    white-space: nowrap;
+    height: 20px;
+    padding-right: 5px;
+}
+
+.sp {
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    float: left;
+}
+
+
+.tstatusbar, .tstatusbar a {
+    color: black;
+}

@@ -1,0 +1,22 @@
+.table thead td {
+  text-align: left; }
+
+.table tbody td {
+  width: 30.66%; }
+
+.table tbody td:last-child {
+  width: 8%; }
+
+.cButton {
+  width: 103px; }
+
+#icon-linkbar {
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  width: 200px;
+  height: 20px;
+  vertical-align: middle;
+  display: inline-block;
+  padding-left: 25px;
+  line-height: 20px; }

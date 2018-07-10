@@ -1,0 +1,20 @@
+.infobox {
+  width: 1260px;
+  height: auto;
+  padding: 5px 10px 10px 10px;
+  margin-top: 20px;
+  overflow: hidden; }
+
+h1, h2, h3 {
+  font-size: 26px;
+  margin: 5px 0 0 0;
+  font-weight: 500; }
+
+h2 {
+  font-size: 20px; }
+
+h3 {
+  font-size: 16px; }
+
+.infobox a {
+  color: #f28f45 !important; }

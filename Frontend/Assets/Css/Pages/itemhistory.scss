@@ -1,0 +1,23 @@
+.table tbody td:last-child{
+    width: 6%;
+    text-align: right;
+}
+
+.table thead td:first-child{
+    text-align:left;
+}
+
+.item-template-32, .item-template-32:hover {
+    padding-top: 6px;
+    height: 26px;
+    text-align: right;
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.item-template-32 div, .item-template-32:hover div{
+    height: 100%;
+    margin-top: -6px;
+}

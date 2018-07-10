@@ -1,0 +1,58 @@
+
+
+.item-template-64, .item-template-32, .item-template-64:hover, .item-template-32:hover {
+    background-size: cover;
+    cursor: pointer;
+    z-index: 8;
+    border-radius: 6px 6px 6px 6px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0.85;
+    padding-left: 5px;
+    line-height: 0px;
+    height: 62px;
+    width: 57px;
+}
+
+.item-template-64:hover, .item-template-32:hover {
+    opacity: 1;
+}
+
+.item-template-32, .item-template-32:hover {
+    padding-left: 3px;
+    font-size: 10px;
+    height: 31px;
+    width: 27px;
+}
+
+.item-template-64 div, .item-template-32 div, .item-template-64:hover div, .item-template-32:hover div {
+    height: 85%;
+    width: 100%;
+}
+
+.qe0{
+	border: 1px outset #9d9d9d;
+	box-shadow: inset 0 0 4px #9d9d9d;
+}
+.qe1{
+	border: 1px outset #fff;
+	box-shadow: inset 0 0 4px #fff;
+}
+.qe2{
+	border: 1px outset #1eff00;
+	box-shadow: inset 0 0 4px #1eff00;
+}
+.qe3{
+	border: 1px outset #0070ff; 
+	box-shadow: inset 0 0 4px #0070ff;
+}
+.qe4{
+	border: 1px outset #a335ee;
+	box-shadow: inset 0 0 4px #a335ee;
+}
+.qe5{
+	border: 1px outset #ff8000;
+	box-shadow: inset 0 0 4px #ff8000;
+}

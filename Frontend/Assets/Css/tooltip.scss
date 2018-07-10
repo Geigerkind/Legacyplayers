@@ -1,0 +1,156 @@
+
+ 
+.q {
+    color: #ffd100!important;
+}
+.q0, .q0 a {
+    color: #9d9d9d!important;
+}
+.q1, .q1 a {
+    color: #fff!important;
+}
+.q2, .q2 a {
+    color: #1eff00!important;
+}
+.q3, .q3 a {
+    color: #0070dd!important;
+}
+.q4, .q4 a {
+    color: #a335ee!important;
+}
+.q5, .q5 a {
+    color: #ff8000!important;
+}
+.q6, .q6 a, .q7, .q7 a {
+    color: #e5cc80!important;
+}
+.q8, .q8 a {
+    color: #ffff98!important;
+}
+.q9, .q9 a {
+    color: #71d5ff!important;
+}
+.q10, .q10 a {
+    color: red!important;
+}
+
+#ttcore{
+    position: absolute;
+    display: none;
+    z-index: 99999;
+}
+
+#tooltip{
+    background: rgb(1,7,33);
+    z-index: 99999;
+    min-width: 150px;
+    max-width: 530px;
+    text-overflow: ellipsis;
+    border: 1px outset #ccc;
+    border-radius: 3px 3px 3px 3px;
+    min-height: 10px;
+    max-height: 800px;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    font-family: Arial !important;
+}
+
+#tooltip table {
+    width: 100%;
+    min-width: 235px;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+#tooltip td, #tooltip th {
+    font-size: 12px!important;
+    line-height: 17px!important;
+    color: #fff;
+    border: none!important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#tooltip th {
+    padding: 3px;
+    vertical-align: top;
+}
+#tooltip td {
+    vertical-align: top;
+}
+#tooltip hr {
+    display: block;
+}
+#tooltip b {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+}
+#tooltip div.indent {
+    padding-left: .6em;
+}
+#tooltip td td, #tooltip td th {
+    background: 0 0;
+}
+#tooltip td th {
+    padding: 0 0 0 4em;
+    text-align: right;
+    font-weight: 400;
+}
+#tooltip p {
+    position: absolute;
+    left: -44px;
+    top: -1px;
+    width: 44px;
+    height: 44px;
+    background: 4px 4px no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.socket-blue, .socket-cogwheel, .socket-hydraulic, .socket-meta, .socket-prismatic, .socket-red, .socket-yellow {
+    padding-left: 26px;
+}
+#tooltip table.shrink b {
+    font-size: 12px;
+    line-height: 15px;
+}
+#tooltip table.shrink td, #tooltip table.shrink th {
+    font-size: 10px;
+    line-height: 14px;
+}
+#tooltip b#tooltip_title {
+    color: #FFD100;
+}
+#tooltip a, #tooltip a:hover {
+    text-decoration: none;
+}
+#tticon {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border: 1px outset #ccc;
+    left: -50px;
+    border-radius: 4px 4px 4px 4px;
+    z-index: 99999;
+}
+/*
+.socket-meta {
+    background: url(../../../../../../External/TwinheadTooltip/socket_meta.gif) left center no-repeat;
+}
+.socket-red {
+    background: url(../../../../../../External/TwinheadTooltip/socket_red.gif) left center no-repeat;
+}
+.socket-yellow {
+    background: url(../../../../../../External/TwinheadTooltip/socket_yellow.gif) left center no-repeat;
+}
+.socket-blue {
+    background: url(../../../../../../External/TwinheadTooltip/socket_blue.gif) left center no-repeat;
+}
+.socket-prismatic {
+    background: url(../../../../../../External/TwinheadTooltip/socket_prismatic.gif) left center no-repeat;
+}
+.socket-hydraulic {
+    background: url(../../../../../../External/TwinheadTooltip/socket_hydraulic.gif) left center no-repeat;
+}
+.socket-cogwheel {
+    background: url(../../../../../../External/TwinheadTooltip/socket_cogwheel.gif) left center no-repeat;
+}
+*/

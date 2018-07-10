@@ -1,0 +1,27 @@
+#graph {
+  width: 100%;
+  height: 440px;
+  margin-bottom: 20px; }
+
+.table thead td {
+  text-align: left;
+  font-size: 18px; }
+
+#left {
+  width: 575px;
+  float: left; }
+
+#left tbody td:last-child {
+  width: 25%;
+  text-align: right; }
+
+#right {
+  width: 700px;
+  margin-left: 5px;
+  float: left; }
+
+#right tbody td {
+  width: 42%; }
+
+#right tbody td:last-child {
+  width: 16%; }

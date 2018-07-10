@@ -1,0 +1,20 @@
+#ra-navbar select {
+  width: 314px;
+  height: 30px;
+  margin-bottom: 5px !important; }
+
+#ra-navbar input {
+  width: 145px; }
+
+.table thead td {
+  text-align: left; }
+
+.table tbody td:first-child, .table tbody td:nth-child(2) {
+  width: 20%; }
+
+.table tbody td {
+  width: 15%; }
+
+.table tbody td:last-child {
+  width: 5%;
+  text-align: right; }

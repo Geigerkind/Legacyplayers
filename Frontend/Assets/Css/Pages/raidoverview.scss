@@ -1,0 +1,42 @@
+.rText{
+    width: 187px;
+}
+
+.rSelect{
+    width: 138px;
+    height: 31px;
+}
+
+#submitt{
+    width: 100px;
+    height: 33px;
+}
+
+#overview{
+    margin-top: 5px;
+}
+
+#overview thead tr td{
+    text-align: left;
+}
+
+#overview tbody tr td:first-child{
+    text-align: right;
+    width: 5%;
+}
+
+#overview tbody tr td:nth-child(2), #overview tbody tr td:nth-child(3) {
+    width: 22.5%;
+}
+
+#overview tbody tr td:nth-child(4), #overview tbody tr td:nth-child(5){
+    width: 12%;
+}
+
+#overview tbody tr td:nth-child(6){
+    width: 8%;
+}
+
+#overview tbody tr td:last-child{
+    width: 8%;
+}

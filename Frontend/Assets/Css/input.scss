@@ -1,0 +1,75 @@
+
+
+input, textarea, button, .cButton {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    height: 30px;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(225, 242, 245);
+    border: 1px solid rgb(80,80,80);
+    box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+    border-radius: 2px 2px 2px 2px;
+    font-family: Arial !important;
+    margin-right: 4px;
+}
+
+select{
+    margin-right: 4px;
+}
+
+.cButton{
+    line-height: 31px;
+    text-align: center;
+}
+
+.cButton:hover{
+    color: #f28f45;
+    cursor: pointer;
+}
+
+input[type=search]{
+    width: 200px;
+    margin-top: 4px;
+}
+
+input[type=checkbox]{
+    height: 16px;
+    width: 16px;
+}
+
+textarea{
+    resize: none;
+    padding-top: 5px;
+}
+
+input[type=submit]{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 0 !important;
+}
+
+input[type=submit]:hover, button:hover{
+    color: #f28f45;
+    cursor: pointer;
+}
+
+select {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+    border-radius: 2px 2px 2px 2px;
+    color: rgb(225, 242, 245);
+    height: 25px;
+    padding: 0px 5px 0px 5px !important;
+} 
+
+.cText{
+    width: 400px;
+    margin-bottom: 5px;
+}
+.text{
+    width: 1270px;
+    height: 200px;
+}

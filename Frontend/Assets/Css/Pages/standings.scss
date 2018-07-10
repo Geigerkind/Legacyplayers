@@ -1,0 +1,46 @@
+#ra-navbar{
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+form{
+    float: left;
+}
+
+#ra-navbar select{
+    width: 165px;
+    height: 30px;
+}
+
+#ra-navbar input{
+    width: 94px;
+}
+
+.cButton{
+    width: 118.5px;
+    float: left;
+    margin: 0 0 0 5px !important;
+    height: 28px;
+}
+.table thead td{
+    text-align: left;
+}
+
+.table tbody td{
+    width: 8%;
+}
+
+.table tbody td:first-child, .table tbody td:nth-child(2){
+    width: 5%;
+    text-align: right;
+}
+
+.table tbody td:nth-child(3), .table tbody td:nth-child(4){
+    width: 29%;
+    text-align: left;
+}
+
+.pvprankimage {
+    width: 32px;
+    height: 32px;
+}

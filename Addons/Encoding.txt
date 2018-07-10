@@ -1,0 +1,136 @@
+
+--[[
+Remapping Keys:
+A = NS => Time start (110665.003)
+B = TS => Date of time start (22:17,04-20 20:17:49)
+C = RM => Realm (Nefarian [PVP]) => Note could contain ] :/ arrg
+D = LC => Locale (enUS)
+E = PL => Player (SomeName)
+F = VR => Version of the addon (1)
+G = ZC => Zone entered (1.544)
+H = ZN => Zone name (Ahn'Qiraj)
+I = ID => Instance id (NK / or some number)
+J = CBTPB => Combat entered by the player
+K = CBTPE => Combat left by the player
+L = CBT => combat entered (then ",NUM") How many are in combat at that time (always changes)
+M = NPCID (123)
+N = BDET
+O =
+P =
+Q =
+R =
+S =
+T =
+U =
+V =
+W =
+X =
+Y =
+Z =
+Hmm :/
+I think it is better to let a lot of things be implicit Guess that will drop down the length to 20% of original formatting
+Following sentences exist:
+1. First entry
+Currently: NS:110665.003,TS=22:17,04-20 20:17:49,RM=Nefarian,LC=enUS,PL=Floydlina,VR=1
+After: A110665.003}SomeOtherPlace}22:17,04-20 20:17:49}Nefarian}enUS}1
+
+2. Zone entered
+Currently: ZC:1.544,ZN=Ahn'Qiraj,ID=NK
+After: B1.544}Ahn'Qiraj}?
+
+3. Player entering combat
+Currently: CBTPB:64.116
+After: C64.116
+
+4. Player leaving combat
+Currently: CBTPE:64.116
+After: D64.116
+
+5. Raid combat state
+Currently: CBT:64.194,N40
+After: E64.194}40
+
+6. Npc added to the list
+Currently: NPCID:1=Eye of C'Thun
+After: F1=Eye of C'Thun
+
+7. Boss/NPC entering combat (mainly bosses tho)
+Currently: BDET:70.887,NPC=1
+After: G70.887}1
+
+10. Bosshealth !!! By convention npc ids are here negative!
+Currently: BH:1,HS=70.887:99.343525353356643
+After: H1}70.887}99.343
+
+9. Abilities added to the list
+Currently: ABID:1=Healing Touch
+After: I1=Healing Touch
+
+8. Overheal (very common) ABID,CID,TID will be summerized into one id
+Currently: OH:77.813,ABID=1,CID=19,TID=20,RH=3624,OH=264
+After: J77.813}1}3624}264
+
+11. ABID,CID,TID Combo
+Currently: Does not exist (TODO)
+After: K1}1}19}20
+
+12. interrupts (Not worth the savings cause its rare)
+Currently: ITR:685.733,CID=27,TID=41,CAB=19,TAB=17
+After: L685.733}27}41}19}17
+
+13. Dispels (Same as interrupts)
+Currently: DSP:937.207,CID=20,TID=35,CAB=17,TAB=18
+After: M937.207}20}35}17}18
+
+14. Player logs off
+Currently: ES:115319.293,ZN=Orgrimmar,TS=23:35,04-20 21:35:23,RM=Nefarian,LC=enUS,PL=Floydlina,VR=1
+After: N115319.293}Orgrimmar}23:35,04-20 21:35:23}Nefarian}enUS}1
+
+15. Threat (NEEDS TESTING!)
+Currently: THR:"..RPLLPlayerData[1][cat][1]..",TS="..val 
+After: O1223.244}232.423
+
+16. BG (Not yet implemented fully)
+Currently: BGTOTAL:"..this:formatTimeAlpha()..",RS="..totalsResult
+After: P224.234}Some data splitted with commas I guess
+
+17. BG Anouncements (Not yet implemented fully)
+Currently: this:formatTimeAlpha()..(msg or "SYSTEM_ALLIANCE")
+After: Q243.234}Some message
+
+18. BG left (Needs proper implementation) TODO: Change battlefieldzones to ids instead of strings o.O
+Currently: BGLEFT:"..self:formatTimeAlpha()..",ZN="..battlefieldzones[inBG]
+After: R242.323}3
+
+19. Bg joined (Needs proper implementation)
+Currently: BGJOIN:"..self:formatTimeAlpha()..",ZN="..battlefieldzones[inBG]
+After: S242.323}3
+
+20. Speech added to the list
+Currently: SPID:"..yellcount.."="..key
+After: T1=some string
+
+21. Instance reset
+Currently: ISTR
+After: U122.232
+
+22. Loot gained
+Currently: LT:980.139,PL=10,IT=22396
+After: V980.139}10}22396
+
+23. Speech outputted TODO: Change the prefixes to Ids and add it to the string
+Currently: EM:1126.421,NPC=3,CT=4
+After: W1}1126.421}3}4
+
+24. Enemy dies
+Currently: BD:1364.104,NPC=3,ID=NK
+After: X1364.104}3}?
+
+Guess we have still got Y and Z :D
+
+Notes:
+Gotta consider that some names, sentences etc can contain "," so it is a bad splicing character => Replaced by }
+Reminder: The timestamps given are relative to the start time NOT incombat time
+Some sessions might be part of the same raid
+
+]]--

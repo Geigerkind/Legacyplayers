@@ -1,0 +1,40 @@
+#ra-navbar select {
+  width: 209.5px; }
+
+#ra-navbar input {
+  width: 145px; }
+
+.tstatusbar {
+  white-space: nowrap;
+  display: inline-block;
+  height: 20px !important;
+  line-height: 20px !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  border: none !important; }
+
+.tstatusbar div:first-child {
+  background-color: rgba(255, 255, 255, 0.15);
+  display: table-cell;
+  width: 100%;
+  white-space: nowrap;
+  padding-right: 5px;
+  padding-left: 5px;
+  height: 20px; }
+
+.tstatusbar div:last-child {
+  background-color: rgba(255, 255, 255, 0.15);
+  display: table-cell;
+  white-space: nowrap;
+  height: 20px; }
+
+.halfIt {
+  width: 49%;
+  float: left; }
+
+.halfIt:last-child {
+  margin-left: 2%; }
+
+.halfIt td:last-child {
+  width: 95% !important;
+  text-align: left !important; }

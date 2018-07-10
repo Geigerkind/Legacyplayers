@@ -1,0 +1,28 @@
+#ra-navbar{
+	margin-top: 20px;
+	margin-bottom: 5px;
+	height: 30px;
+}
+
+#ra-navbar input[type=text]{
+	width: 300px;
+}
+
+#ra-navbar input[type=submit]{
+	width: 100px;
+	float: right;
+}
+
+#graph{
+	width: 100%;
+	height: 400px;
+	margin-bottom: 5px;
+}
+
+.table thead td{
+	text-align: left;
+}
+
+.table tbody td{
+	width: 16.66%;
+}

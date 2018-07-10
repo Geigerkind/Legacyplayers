@@ -1,0 +1,44 @@
+#ra-navbar {
+  height: 30px;
+  margin-bottom: 5px; }
+
+form {
+  float: left; }
+
+#ra-navbar select {
+  width: 235.3px;
+  height: 30px; }
+
+#ra-navbar input {
+  width: 94px; }
+
+.cButton {
+  width: 100px;
+  float: left;
+  margin-left: 5px !important;
+  height: 28px;
+  margin-right: 0 !important;
+  line-height: 28px; }
+
+.table thead td {
+  text-align: left; }
+
+.table tbody td {
+  width: 5%; }
+
+.table tbody td:first-child {
+  text-align: right; }
+
+.table tbody td:last-child {
+  width: 8%; }
+
+.table tbody td:nth-child(2), .table tbody td:nth-child(3) {
+  width: 33.5%; }
+
+.table tbody td:nth-child(3) div {
+  float: left;
+  margin-right: 30px; }
+
+.table tbody td:nth-child(3) div div {
+  position: absolute;
+  margin-left: 25px; }

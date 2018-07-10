@@ -1,0 +1,179 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="RPLL.MasterPage" %>
+<%@ Import Namespace="RPLL" %><!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title></title>
+    <link rel="icon" href="/Assets/misc/shieldsword_ico.png" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <meta name="viewport" content="width=1280" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="Description" content="World Of Warcraft analyzation site" />
+    <!--
+    <link rel="preload" href="/Assets/misc/Scada.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        @font-face {
+            font-family: Scada;
+            src: url('/Assets/misc/Scada.woff2');
+        }
+    </style>
+    -->
+
+    <script type="text/javascript">
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js').then(function (registration) {
+                }, function (err) {
+                });
+            });
+        }
+    </script>
+    
+    <%=mAds0 %>
+    <script src="/Assets/Js/ads.js"></script>
+
+    <script type="text/javascript" src="/Assets/Js/main.min.js" defer></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <ul>
+            <li id="nav-title" style="padding-left: 0;"><a href="/">LegacyPlayers</a></li>
+            <li><%=(!Utility.IsMobileDevice(Request.UserAgent) ? "<a href=\"/Raids/\">" : "") %>Raids<%=(!Utility.IsMobileDevice(Request.UserAgent) ? "</a>" : "") %>
+                           <ol>
+                               <li><a href="/Raids/">Raid List</a></li>
+                               <li><a href="/Raids/Bosses/">Bosses</a></li>
+                               <li><a href="/Raids/Ranking/">Ranking</a></li>
+                               <li><a href="/Raids/Speedkill/">Speedkills</a></li>
+                               <li><a href="/Raids/Speedrun/">Speedruns</a></li>
+                               <li><a href="/Raids/Loot/">Loot</a></li>
+                           </ol>
+                       </li>
+            <li>Armory
+                           <ol>
+                               <li><a href="/Search/">Search</a></li>
+                               <li><a href="/Armory/Item/">Items</a></li>
+                               <li><a href="/Armory/GuildList/">Guilds</a></li>
+                           </ol>
+                       </li>
+            <li><%=(!Utility.IsMobileDevice(Request.UserAgent) ? "<a href=\"/PvP/Standings/\">" : "") %>PvP<%=(!Utility.IsMobileDevice(Request.UserAgent) ? "</a>" : "") %>
+                                <ol>
+                                    <!--<li><a href="/PvP/">Battlegrounds</a></li>-->
+                                   <li><a href="/PvP/Standings/">Standings</a></li>
+                                   <li><a href="/PvP/LifetimeKills/">Lifetime Kills</a></li>
+                                   <li><a href="/PvP/HighestRank/">Highest Ranks</a></li>
+                                   <li><a href="/PvP/Arena/">Arena Rankings</a></li>
+                               </ol>
+                            </li>
+            <li>Tools
+                                <ol>
+                                   <li><a href="/Tools/Talents/#L">Talent Calculator</a></li>
+                                   <li><a href="/Tools/Rankpoints/">Rankpoints Calculator</a></li>
+                                    <li><a href="/Tools/Designer/">Character Designer</a></li>
+                                   <!--<li><a href="/Tools/Database/">Database</a></li>-->
+                               </ol>
+                             </li>
+            <li>Service
+                           <ol>
+                               <!--<li><a href="/Service/Contact/">Contact</a></li>-->
+                               <li><a href="https://github.com/Geigerkind/RPLL/issues">Bugtracker</a></li>
+                               <li><a href="/Service/Changelog/">Changelog</a></li>
+                               <!--<li><a href="/Armory/Search">Forums</a></li>-->
+                           </ol>
+                       </li>
+            <li><a href="/Contribute/">Contribute</a></li>
+            <li><a href="/Queue/">Queue</a></li>
+            <li class="fright" style="padding-right: 0;">
+                <form method="GET" action="/Search/">
+                    <label><div class="foolLH">T</div><input name="search" id="searchBar" type="search" min="2" max="100" placeholder="Enter a player or guild" required/></label>
+                </form>
+            </li>
+            <%=m_Account %>
+        </ul>
+    </header>
+    <main>
+        <script>
+            var w = window,
+                d = document,
+                e = d.documentElement,
+                g = d.getElementsByTagName('body')[0];
+            window.WinWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
+            if (window.WinWidth >= 1620 && window.canRunAds === true) {
+                window.SectionWidth = 1620;
+                window.AdWidth = 160;
+                window.AdHeight = 600;
+            }
+            else if (window.WinWidth >= 1540 && window.canRunAds === true) {
+                window.SectionWidth = 1540;
+                window.AdWidth = 120;
+                window.AdHeight = 600;
+            }
+            else {
+                window.SectionWidth = 1280;
+                window.AdWidth = 0;
+                window.AdHeight = 0;
+            }
+        </script>
+        <section style="width: 1300px;" id="MainSection">
+            <!-- Left -->
+            <div style="float: left; min-height: 100px; width: 0px; margin-right: 10px;margin-top: 20px;" id="AdOneFrame">
+                <%=mAds1 %>
+            </div>
+            <div style="float: left; min-height: 100px; width: 1280px; margin: 0 auto;">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+            <div style="float: left; min-height: 100px; width: 0px; margin-left: 10px;margin-top: 20px;" id="AdTwoFrame">
+                <!-- Right -->
+                <%=mAds2 %>
+            </div>
+        </section>
+        <!-- FooterBig -->
+        <%=mAds3 %>
+    </main>
+    <footer>
+        Copyright &copy; LegacyPlayers 2017-2018 -
+        <a href="/About/">About</a> -
+        <!--<a href="/Service/Contact/">Contact</a> - -->
+        <a href="/Contributors/">Contributors</a> -
+        <a href="/Imprint/">Imprint</a> -
+        <a href="/Privacy/">Privacy</a> -
+        <a href="https://twitter.com/LegacyLogs" target="_blank" rel="noopener">Twitter</a> -
+        <a href="https://discord.gg/Ae3mBdT" target="_blank" rel="noopener">Discord</a> -
+        <a href="/Donate/">Donate</a> - 
+        <a href="/Service/RestAPI">RestAPI</a>
+    </footer>
+    <div id="ttcore">
+        <div id="tticon"></div>
+        <div id="tooltip"></div>
+    </div>
+    <div runat="server" id="notification" class="bgbox unselectable" onclick="this.style.display='none'"></div>
+    <%=_COOKIE %>
+</body>
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107735472-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-107735472-1');
+</script>
+    -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-107735472-1', 'auto', 'tracker');
+    ga('tracker.send', 'pageview');
+
+    void 0 === window.canRunAds ? ga("tracker.send", "event", "Adblock", "Yes", { nonInteraction: 1 }) : ga("tracker.send", "event", "Adblock", "No", { nonInteraction: 1 });
+
+</script>
+</html>

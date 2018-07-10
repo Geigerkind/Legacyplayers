@@ -1,0 +1,6 @@
+a {
+  text-decoration: none;
+  color: #e1f2f5; }
+
+a:hover, .selected {
+  color: #f28f45 !important; }

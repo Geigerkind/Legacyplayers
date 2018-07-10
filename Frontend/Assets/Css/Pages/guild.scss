@@ -1,0 +1,162 @@
+.linkbar div{
+    float: left;
+}
+
+.ps{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.ps div{
+    position: absolute;
+    padding-left: 30px;
+    width: 570px;
+    line-height: 25px;
+}
+
+#left-container, #right-container{
+    width: 300px;
+    min-height: 300px;
+    float: left;
+    margin-top: 20px;
+    padding: 10px 10px 5px 10px;
+    overflow: hidden;
+}
+
+#right-container{
+    margin-left: 5px;
+}
+
+#left-container .table, #right-container .table{
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+#left-container .table thead td, #right-container .table thead td{
+    text-align: left;
+    font-size: 16px;
+}
+
+#left-container .table tbody td:last-child{
+    width: 40%;
+    text-align: right;
+}
+
+#recentraids thead td:last-child{
+    text-align: right;
+}
+
+#middle-container{
+    width: 610px;
+    min-height: 10px;
+    float: left;
+    padding: 10px 10px 10px 10px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+#middle-container .table{
+    width: 610px;
+}
+
+.item-template-32, .item-template-32:hover {
+    padding-top: 6px;
+    height: 26px;
+    width: 29px;
+    text-align: right;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+#right-container .table tbody td:last-child{
+    width: 30%;
+    text-align: right;
+}
+
+#middle-container:first-child thead tr td{
+    width: 33.33%;
+}
+
+.pvprankimage {
+    width: 32px;
+    height: 32px;
+}
+
+#member tbody td{
+    width: 10%;
+    text-align: center;
+}
+
+#member tbody td:first-child, #member tbody td:nth-child(4){
+    width: 5%;
+}
+
+#member td:nth-child(2){
+    width: 35%;
+    text-align: left;
+}
+
+#member td:nth-child(3){
+    width: 20%;
+    text-align: left;
+}
+
+#member .ps, #topranked .ps, #changes .ps{
+    margin-left: -4px;
+}
+
+#topranked td:nth-child(3), #topranked td:last-child{
+    width: 45%;
+    text-align: left;
+}
+
+#topranked tbody td:first-child, #topranked tbody td:nth-child(2){
+    width: 5%;
+    text-align: right;
+}
+
+#tableiterator .placeholder{
+    width: 31px;
+}
+
+#changes thead td:first-child, #changes thead td:nth-child(2){
+    text-align: left;
+}
+
+#changes tbody td:first-child{
+    width: 30%;
+}
+
+#changes tbody td:last-child{
+    width: 15%;
+    text-align: right;
+}
+
+#achievements{
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    width: 200px;
+    height: 32px;
+    float: right;
+    text-align: right;
+    padding-right: 37px;
+    line-height: 32px;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+#tableiterator .cButton {
+    width: 80px !important;
+}
+
+#topranked tbody td:nth-child(5), #topranked tbody td:nth-child(6)
+{
+    text-align:right;
+}
+
+#tableNavBar td:hover {
+    cursor: pointer;
+    color: #f28f45;
+}
